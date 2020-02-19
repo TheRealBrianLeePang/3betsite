@@ -30,5 +30,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "base-64": "^0.1.0",
+    "glob": "^7.1.6",
+    "nba": "^4.13.0",
+    "rn-fetch-blob": "^0.12.0"
   }
 }
