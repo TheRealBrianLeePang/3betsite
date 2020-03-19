@@ -6,6 +6,9 @@ import json
 from nba_api.stats.static import teams
 from nba_api.stats.endpoints import commonteamroster
 from copy import copy, deepcopy
+import os.path
+from os import path
+import ast
 
 def addZero(num):
     if len(str(num)) == 1:
@@ -41,12 +44,27 @@ for index,i in enumerate(games):
     for jindex,j in enumerate(i):
         name = teams.find_team_name_by_id(j)
         teamNames[index][jindex] = name['full_name']
+savedDict = {}
 def getPlayers(teamId):
-    teamDict = commonteamroster.CommonTeamRoster(teamId).get_dict()
-    players = ""
-    for i in teamDict["resultSets"][0]["rowSet"]:
-        players+=(i[3])+", "
-    return players
+    print("SKIPPING APIS")
+    if path.exists("players"+year+month+day+".txt"):
+        with open("players"+year+month+day+".txt", 'r') as f:
+            s = f.read()
+            tempDict = ast.literal_eval(s)
+        return tempDict[teamId]
+    else:
+        print("ACCESSING APIS")
+        teamDict = commonteamroster.CommonTeamRoster(teamId).get_dict()
+        players = ""
+        for i in teamDict["resultSets"][0]["rowSet"]:
+            players+=(i[3])+", "
+        savedDict[teamId] = players
+        if len(savedDict) == len(teamNames) * 2:
+            print(teamNames)
+            with open("players"+year+month+day+".txt", 'w') as f:
+                print(savedDict, file=f)
+        return players
+
 
 result = ""
 for index,i in enumerate(teamNames):
