@@ -71,10 +71,11 @@ for index,i in enumerate(teamNames):
     for jindex,j in enumerate(i):
         result+=str(j)
         if(jindex == 0):
-            result+= " -- "+getPlayers(games[index][jindex]) + "<br>"
+            #result+= " -- "+getPlayers(games[index][jindex]) + "<br>"
             result+="VS <br>"
         else:
-            result+= " -- "+getPlayers(games[index][jindex]) + "<br>"
+            #result+= " -- "+getPlayers(games[index][jindex]) + "<br>"
+            1==1
     result+="<br>"
 
 def index(request):
