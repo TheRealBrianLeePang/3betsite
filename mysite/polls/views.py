@@ -66,19 +66,15 @@ def getPlayers(teamId):
         return players
 
 
-result = ""
+result = "<!DOCTYPE html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>NBA Games</title><link rel='stylesheet' href='https://unpkg.com/purecss@1.0.1/build/pure-min.css'></head><body><h1 align='center'>NBA Games Happening Today:</h1><table align='center' class='pure-table pure-table-bordered'><thead><tr><th>Home Team</th><th>Away Team</th></tr></thead>"
+
 for index,i in enumerate(teamNames):
+    result += "<tr>"
     for jindex,j in enumerate(i):
-        result+=str(j)
-        if(jindex == 0):
-            #result+= " -- "+getPlayers(games[index][jindex]) + "<br>"
-            result+="VS <br>"
-        else:
-            #result+= " -- "+getPlayers(games[index][jindex]) + "<br>"
-            1==1
-    result+="<br>"
+        result+="<td>" + str(j) +"</td>"
+    result += "</tr>"
+result+= "</table></body></html>"
+
 
 def index(request):
-    #return HttpResponse("Hello, world. You're at the polls index.")
     return HttpResponse(result)
-
