@@ -66,14 +66,14 @@ def getPlayers(teamId):
         return players
 
 
-result = "<!DOCTYPE html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>NBA Games</title><link rel='stylesheet' href='https://unpkg.com/purecss@1.0.1/build/pure-min.css'></head><body><h1 align='center'>NBA Games Happening Today:</h1><table align='center' class='pure-table pure-table-bordered'><thead><tr><th>Home Team</th><th>Away Team</th></tr></thead>"
+result = "<!DOCTYPE html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>NBA Games</title><link rel='stylesheet' href='https://unpkg.com/purecss@1.0.1/build/pure-min.css'><style>img{width: 5%;display: block; margin-left: auto; margin-right: auto;}</style></head><body><h1 align='center'>NBA Games Happening Today:</h1><table align='center' class='pure-table pure-table-bordered'><thead><tr><th>Home Team</th><th>Away Team</th></thead>"
 
 for index,i in enumerate(teamNames):
     result += "<tr>"
     for jindex,j in enumerate(i):
         result+="<td>" + str(j) +"</td>"
     result += "</tr>"
-result+= "</table></body></html>"
+result+= "</table><br><img src='http://loodibee.com/wp-content/uploads/nba-logo-transparent.png' alt='NBA logo'></body></html>"
 
 
 def index(request):
