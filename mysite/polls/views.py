@@ -54,6 +54,21 @@ def getPlayers(teamId):
         return tempDict[teamId]
     else:
         print("ACCESSING APIS")
+
+        players = ""
+        url = 'http://data.nba.net/10s/prod/v1/'+str(int(year)-1)+'/teams/'+teamId+'/roster.json'
+        urllib.request.urlretrieve(url, teamId+'.json')
+        with open(teamId+'.json') as json_file:
+            data = json.load(json_file)
+            for p in data['league']['standard']['players']:
+                players += p['personId']+","
+        savedDict[teamId] = players
+        if len(savedDict) == len(teamNames) * 2:
+            print(teamNames)
+            with open("players"+year+month+day+".txt", 'w') as f:
+                print(savedDict, file=f)
+        return players
+        '''
         teamDict = commonteamroster.CommonTeamRoster(teamId).get_dict()
         players = ""
         for i in teamDict["resultSets"][0]["rowSet"]:
@@ -64,6 +79,7 @@ def getPlayers(teamId):
             with open("players"+year+month+day+".txt", 'w') as f:
                 print(savedDict, file=f)
         return players
+        '''
 
 
 result = "<!DOCTYPE html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>NBA Games</title><link rel='stylesheet' href='https://unpkg.com/purecss@1.0.1/build/pure-min.css'><style>img{width: 5%;display: block; margin-left: auto; margin-right: auto;}</style></head><body><h1 align='center'>NBA Games Happening Today:</h1><table align='center' class='pure-table pure-table-bordered'><thead><tr><th>Home Team</th><th>Away Team</th></thead>"
@@ -71,7 +87,8 @@ result = "<!DOCTYPE html><html><head><meta charset='utf-8'><meta name='viewport'
 for index,i in enumerate(teamNames):
     result += "<tr>"
     for jindex,j in enumerate(i):
-        result+="<td>" + str(j) +"</td>"
+        result += "<td>" + str(j) + "</td>"
+        #playerids = getPlayers(games[index][jindex])
     result += "</tr>"
 result+= "</table><br><img src='http://loodibee.com/wp-content/uploads/nba-logo-transparent.png' alt='NBA logo'></body></html>"
 
