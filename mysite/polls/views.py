@@ -46,8 +46,9 @@ for index,i in enumerate(games):
         teamNames[index][jindex] = name['full_name']
 savedDict = {}
 def getPlayers(teamId):
-    print("SKIPPING APIS")
     if path.exists("players"+year+month+day+".txt"):
+        
+        print("SKIPPING APIS")
         with open("players"+year+month+day+".txt", 'r') as f:
             s = f.read()
             tempDict = ast.literal_eval(s)
@@ -81,14 +82,27 @@ def getPlayers(teamId):
         return players
         '''
 
+def getPlayerName(playerId):
+    url = "http://data.nba.net/10s/prod/v1/"+str(int(year)-1)+"/players.json"
+    urllib.request.urlretrieve(url, 'players.json')
+    with open('players.json') as json_file:
+        data = json.load(json_file)
+        for p in data['league']['standard']:
+            if p['personId'] == playerId:
+                return p['firstName']+p['lastName']
+
 
 result = "<!DOCTYPE html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>NBA Games</title><link rel='stylesheet' href='https://unpkg.com/purecss@1.0.1/build/pure-min.css'><style>img{width: 5%;display: block; margin-left: auto; margin-right: auto;}</style></head><body><h1 align='center'>NBA Games Happening Today:</h1><table align='center' class='pure-table pure-table-bordered'><thead><tr><th>Home Team</th><th>Away Team</th></thead>"
 
 for index,i in enumerate(teamNames):
     result += "<tr>"
     for jindex,j in enumerate(i):
-        result += "<td>" + str(j) + "</td>"
-        #playerids = getPlayers(games[index][jindex])
+        playerids = getPlayers(games[index][jindex])
+        playernames = []
+        for i in playerids.split(","):
+            print(i)
+            playernames.append(getPlayerName(i))
+        result += "<td>" + str(j) + str(playernames) + "</td>"
     result += "</tr>"
 result+= "</table><br><img src='http://loodibee.com/wp-content/uploads/nba-logo-transparent.png' alt='NBA logo'></body></html>"
 
