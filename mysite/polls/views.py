@@ -24,8 +24,10 @@ month = addZero(today.month)
 day = addZero(today.day)
 scheduleYear = ''
 games = []
+arenas = []
 
 url = 'http://data.nba.net/10s/prod/v1/'+year+month+day+'/scoreboard.json'
+print(url)
 urllib.request.urlretrieve(url, 'test.json')
 url = 'http://data.nba.net/10s/prod/v1/today.json'
 urllib.request.urlretrieve(url, 'frontpage.json')
@@ -34,6 +36,8 @@ with open('test.json') as json_file:
     data = json.load(json_file)
     for p in data['games']:
         games.append([p['vTeam']['teamId'],p['hTeam']['teamId']])
+        arenas.append(p['arena']['name']+ ", " + p['arena']['city'])
+
 with open('frontpage.json') as json_file:
     data = json.load(json_file)
     scheduleYear = data['seasonScheduleYear']
@@ -102,7 +106,7 @@ for index,i in enumerate(teamNames):
         for i in playerids.split(","):
             print(i)
             playernames.append(getPlayerName(i))
-        result += "<td>" + str(j) + str(playernames) + "</td>"
+        result += "<td>" + str(j) + str(playernames) + arenas[index]  + "</td>"
     result += "</tr>"
 result+= "</table><br><img src='http://loodibee.com/wp-content/uploads/nba-logo-transparent.png' alt='NBA logo'></body></html>"
 
