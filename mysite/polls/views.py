@@ -138,7 +138,8 @@ for index,i in enumerate(teamNames):
             result += "<td>" + arenas[index]  + "<td></td> "
 
     result += "</tr>"
-result+= "</table><br><a href = 'https://stats.nba.com/scores/03/11/2020'><img src='http://loodibee.com/wp-content/uploads/nba-logo-transparent.png' alt='NBA logo' height='150'></a></body></html>"
+result+= "</table><br><a href = 'https://stats.nba.com/scores/03/11/2020'><img src='http://loodibee.com/wp-content/uploads/nba-logo-transparent.png' alt='NBA logo' height='150'></a>"
+result+= "<p style = 'text-align:center; font-size:12px'>Project 3bet, Case Western Reserve Univeristy 2020 Senior Project <br> David Greenberg, Brian Pang, Lucas Invernizzi, Kevin Szmyd, David Kerrigan</p></body></html>"
 
 
 def index(request):
