@@ -52,13 +52,11 @@ savedDict = {}
 def getPlayers(teamId):
     if path.exists("players"+year+month+day+".txt"):
         
-        print("SKIPPING APIS")
         with open("players"+year+month+day+".txt", 'r') as f:
             s = f.read()
             tempDict = ast.literal_eval(s)
         return tempDict[teamId]
     else:
-        print("ACCESSING APIS")
 
         players = ""
         url = 'http://data.nba.net/10s/prod/v1/'+str(int(year)-1)+'/teams/'+teamId+'/roster.json'
@@ -93,22 +91,51 @@ def getPlayerName(playerId):
         data = json.load(json_file)
         for p in data['league']['standard']:
             if p['personId'] == playerId:
-                return p['firstName']+p['lastName']
+                return p['firstName']+" "+p['lastName']
 
 
-result = "<!DOCTYPE html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>NBA Games</title><link rel='stylesheet' href='https://unpkg.com/purecss@1.0.1/build/pure-min.css'><style>img{width: 5%;display: block; margin-left: auto; margin-right: auto;}</style></head><body><h1 align='center'>NBA Games Happening Today:</h1><table align='center' class='pure-table pure-table-bordered'><thead><tr><th>Home Team</th><th>Away Team</th></thead>"
+result = "<!DOCTYPE html>"
+result += "<html>"
+result += "<head>"
+result += "<meta charset='utf-8'>"
+result += "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
+result += "<title>NBA Games</title>"
+result += "<link rel='stylesheet' href='https://unpkg.com/purecss@1.0.1/build/pure-min.css'>"
+result += "<style>img{display: block; margin-left: auto; margin-right: auto;}"
+result += ".tooltip {position: relative; display: inline-block; border-bottom: 1px dotted black;}"
+result += ".tooltip .tooltiptext {visibility: hidden; width: 200px; background-color: black; color: #fff; text-align: center; border-radius: 6px; padding: 5px 0; top: 100%; left: 50%; margin-left: -100px; position: absolute; z-index: 1;}"
+result += ".tooltip:hover .tooltiptext {visibility: visible;}"
+result += ".center {margin: 0; position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}</style>"
+result += "</head><div class='center'><body><h1 align='center'>NBA Games Happening Today:</h1><table align='center' class='pure-table pure-table-bordered'><thead><tr><th>Away Team</th><th>Home Team</th><th>Location</th></thead>"
 
 for index,i in enumerate(teamNames):
     result += "<tr>"
     for jindex,j in enumerate(i):
+        
         playerids = getPlayers(games[index][jindex])
         playernames = []
+
         for i in playerids.split(","):
-            print(i)
             playernames.append(getPlayerName(i))
-        result += "<td>" + str(j) + str(playernames) + arenas[index]  + "</td>"
+        
+        result += "<td>"
+        
+        if jindex % 2 == 0:
+            result += "<div class='tooltip'>" + str(j) + "<span class='tooltiptext'>" 
+            for p in playernames:
+                if str(p) != "None":
+                    result += str(p) + "<br>"
+            result += "</span></div></td>"
+        else:
+            result += "<div class='tooltip'>" + str(j) + "<span class='tooltiptext'>" 
+            for p in playernames:
+                if str(p) != "None":
+                    result += str(p) + "<br>"
+            result += "</span></div></td>"
+            result += "<td>" + arenas[index]  + "</td>"
+
     result += "</tr>"
-result+= "</table><br><img src='http://loodibee.com/wp-content/uploads/nba-logo-transparent.png' alt='NBA logo'></body></html>"
+result+= "</table><br><a href = 'https://stats.nba.com/scores/03/11/2020'><img src='http://loodibee.com/wp-content/uploads/nba-logo-transparent.png' alt='NBA logo' height='150'></a></body></html>"
 
 
 def index(request):
