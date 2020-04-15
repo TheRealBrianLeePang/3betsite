@@ -109,7 +109,7 @@ result += ".center {margin: 0; position: absolute; top: 50%; left: 50%; -ms-tran
 result += "body{color: white; font-weight: bold; background-image: url('https://burlingtonvt.citymomsblog.com/wp-content/uploads/2020/01/lit-basketball-stadium-with-fans-empty-court-scaled.jpg'); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}</style>"
 result += "</head><div class='center'><body><h1 align='center'>NBA Games Happening Today:</h1>"
 result += "<h3 style = 'text-align:center'><i>(If COVID-19 didn't exist!)</i></h3>"
-result += "<table align='center' class='pure-table pure-table-bordered'><thead><tr><th>Away Team</th><th>Home Team</th><th>Location</th></thead>"
+result += "<table align='center' class='pure-table pure-table-bordered'><thead><tr><th>Away Team</th><th>Home Team</th><th>Location</th><th>Winner/Spread</th></thead>"
 
 for index,i in enumerate(teamNames):
     result += "<tr>"
@@ -135,7 +135,7 @@ for index,i in enumerate(teamNames):
                 if str(p) != "None":
                     result += str(p) + "<br>"
             result += "</span></div></td>"
-            result += "<td>" + arenas[index]  + "</td>"
+            result += "<td>" + arenas[index]  + "<td></td> "
 
     result += "</tr>"
 result+= "</table><br><a href = 'https://stats.nba.com/scores/03/11/2020'><img src='http://loodibee.com/wp-content/uploads/nba-logo-transparent.png' alt='NBA logo' height='150'></a></body></html>"
