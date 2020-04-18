@@ -20,7 +20,7 @@ def addZero(num):
 
 today = date.today()
 year = str(today.year)
-month = addZero(today.month)
+month = addZero(int(today.month)-2)
 day = addZero(today.day)
 scheduleYear = ''
 games = []
