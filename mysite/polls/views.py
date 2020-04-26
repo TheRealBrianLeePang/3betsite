@@ -112,7 +112,7 @@ result += ".tooltip {position: relative; display: inline-block; border-bottom: 1
 result += ".tooltip .tooltiptext {visibility: hidden; width: 200px; background-color: black; color: white; text-align: center; border-radius: 6px; padding: 5px 0; top: 100%; left: 50%; margin-left: -100px; position: absolute; z-index: 1;}"
 result += ".tooltip:hover .tooltiptext {visibility: visible;}"
 result += ".center {margin: 0; position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}"
-result += "body{color: white; font-weight: bold; background-image: url('https://burlingtonvt.citymomsblog.com/wp-content/uploads/2020/01/lit-basketball-stadium-with-fans-empty-court-scaled.jpg'); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}</style>"
+result += "body{color: white; font-weight: bold; background-image: url('https://cdn.nba.net/assets/video/logos/nba-placeholder.jpg'); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}</style>"
 result += "</head><div class='center'><body><h1 align='center'>NBA Games Happening on " + month + "/" + day + "/" + year + ":</h1>"
 result += "<h3 style = 'text-align:center'><i>(If COVID-19 didn't exist!)</i></h3>"
 result += "<table align='center' class='pure-table pure-table-bordered'><thead><tr><th>Away Team</th><th>Home Team</th><th>Location</th><th>Winner/Spread</th></thead>"
@@ -143,7 +143,7 @@ for index,i in enumerate(teamNames):
 
     result += "</tr>"
 result+= "</table><br><a href = 'https://stats.nba.com/scores/03/11/2020'><img src='http://loodibee.com/wp-content/uploads/nba-logo-transparent.png' alt='NBA logo' height='150'></a>"
-result+= "<p style = 'color: black; text-align:center; font-size:12px'>Project 3bet, Case Western Reserve Univeristy 2020 Senior Project <br> David Greenberg, Brian Pang, Lucas Invernizzi, Kevin Szmyd, David Kerrigan</p></body></html>"
+result+= "<p style = 'text-align:center; font-size:12px'>Project 3bet, Case Western Reserve Univeristy 2020 Senior Project <br> David Greenberg, Brian Pang, Lucas Invernizzi, Kevin Szmyd, David Kerrigan</p></body></html>"
 
 
 def index(request):
