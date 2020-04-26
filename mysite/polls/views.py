@@ -3,8 +3,6 @@ from django.http import HttpResponse
 import urllib.request
 from datetime import date
 import json
-from nba_api.stats.static import teams
-from nba_api.stats.endpoints import commonteamroster
 from copy import copy, deepcopy
 import os.path
 from os import path
@@ -20,19 +18,23 @@ def addZero(num):
 
 today = date.today()
 year = str(today.year)
-month = addZero(int(today.month)-2)
-day = addZero(today.day+4)
+month = addZero(int(today.month)-3)
+tempDay = today.day
+if tempDay > 29:
+    tempDay = 29
+day = addZero(tempDay)
 scheduleYear = ''
 games = []
 arenas = []
 
+
 url = 'http://data.nba.net/10s/prod/v1/'+year+month+day+'/scoreboard.json'
 print(url)
-urllib.request.urlretrieve(url, 'test.json')
+#urllib.request.urlretrieve(url, 'scoreboard.json')
 url = 'http://data.nba.net/10s/prod/v1/today.json'
-urllib.request.urlretrieve(url, 'frontpage.json')
+#urllib.request.urlretrieve(url, 'frontpage.json')
 
-with open('test.json') as json_file:
+with open('data/'+year+month+day+'.json') as json_file:
     data = json.load(json_file)
     for p in data['games']:
         games.append([p['vTeam']['teamId'],p['hTeam']['teamId']])
@@ -42,12 +44,16 @@ with open('frontpage.json') as json_file:
     data = json.load(json_file)
     scheduleYear = data['seasonScheduleYear']
 url = 'http://data.nba.net/10s//prod/'+str(scheduleYear)+'/teams_config.json'
-urllib.request.urlretrieve(url, 'teamconfig.json')
+#urllib.request.urlretrieve(url, 'teamconfig.json')
+
+with open('polls/teamDictionary.json') as json_file:
+    teamDict = json.load(json_file)
+
 teamNames = deepcopy(games)
 for index,i in enumerate(games):
     for jindex,j in enumerate(i):
-        name = teams.find_team_name_by_id(j)
-        teamNames[index][jindex] = name['full_name']
+        name = teamDict[j]
+        teamNames[index][jindex] = name
 savedDict = {}
 def getPlayers(teamId):
     if path.exists("players"+year+month+day+".txt"):
@@ -60,7 +66,7 @@ def getPlayers(teamId):
 
         players = ""
         url = 'http://data.nba.net/10s/prod/v1/'+str(int(year)-1)+'/teams/'+teamId+'/roster.json'
-        urllib.request.urlretrieve(url, teamId+'.json')
+        urllib.request.urlretrieve(url, 'data/'+teamId+'.json')
         with open(teamId+'.json') as json_file:
             data = json.load(json_file)
             for p in data['league']['standard']['players']:
@@ -111,15 +117,15 @@ result += "</head><div class='center'><body><h1 align='center'>NBA Games Happeni
 result += "<h3 style = 'text-align:center'><i>(If COVID-19 didn't exist!)</i></h3>"
 result += "<table align='center' class='pure-table pure-table-bordered'><thead><tr><th>Away Team</th><th>Home Team</th><th>Location</th><th>Winner/Spread</th></thead>"
 
+with open('polls/playerDictionary.json') as json_file:
+    playerDict = json.load(json_file)
+
 for index,i in enumerate(teamNames):
     result += "<tr>"
     for jindex,j in enumerate(i):
         
-        playerids = getPlayers(games[index][jindex])
-        playernames = []
-
-        for i in playerids.split(","):
-            playernames.append(getPlayerName(i))
+        playernames = playerDict[games[index][jindex]]
+        playernames = playernames.split(",")
         
         result += "<td>"
         

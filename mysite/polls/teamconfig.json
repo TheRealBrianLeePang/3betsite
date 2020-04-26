@@ -1,0 +1,930 @@
+{
+    "teams": {
+        "config": [
+            {
+                "teamId": "45",
+                "tricode": "CHN",
+                "primaryColor": "#000000",
+                "secondaryColor": "#000000",
+                "app": {
+                    "android": "",
+                    "androidDeepLink": "",
+                    "ios": "",
+                    "iosDeepLink": "",
+                    "tickets": ""
+                },
+                "web": {
+                    "homepage": "",
+                    "tickets": ""
+                }
+            },
+            {
+                "teamId": "70",
+                "tricode": "CRO",
+                "primaryColor": "#000000",
+                "secondaryColor": "#000000",
+                "app": {
+                    "android": "",
+                    "androidDeepLink": "",
+                    "ios": "",
+                    "iosDeepLink": "",
+                    "tickets": ""
+                },
+                "web": {
+                    "homepage": "",
+                    "tickets": ""
+                }
+            },
+            {
+                "teamId": "12332",
+                "tricode": "FRA",
+                "primaryColor": "#000000",
+                "secondaryColor": "#000000",
+                "app": {
+                    "android": "",
+                    "androidDeepLink": "",
+                    "ios": "",
+                    "iosDeepLink": "",
+                    "tickets": ""
+                },
+                "web": {
+                    "homepage": "",
+                    "tickets": ""
+                }
+            },
+            {
+                "teamId": "15019",
+                "tricode": "ADL",
+                "primaryColor": "#000000",
+                "secondaryColor": "#000000",
+                "app": {
+                    "android": "",
+                    "androidDeepLink": "",
+                    "ios": "",
+                    "iosDeepLink": "",
+                    "tickets": ""
+                },
+                "web": {
+                    "homepage": "",
+                    "tickets": ""
+                }
+            },
+            {
+                "teamId": "1610612737",
+                "tricode": "ATL",
+                "ttsName": "Atlanta Hawks",
+                "primaryColor": "#e21a37",
+                "secondaryColor": "#e21a37",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.yinzcam.nba.hawks&hl=en",
+                    "androidDeepLink": "yc-atl-nba://",
+                    "ios": "https://itunes.apple.com/us/app/atlanta-hawks-mobile/id979576290",
+                    "iosDeepLink": "yc-atl-nba://",
+                    "tickets": "http://m.ticketmaster.com/Atlanta-Hawks-tickets/artist/805898?extcmp=gw500743&wt.mc_id=NBA_LEAGUE_ATL_MOBILE_APP_LINK"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/hawks",
+                    "tickets": "http://www.nba.com/hawks/tickets"
+                }
+            },
+            {
+                "teamId": "15021",
+                "tricode": "BJD",
+                "primaryColor": "#000000",
+                "secondaryColor": "#000000",
+                "app": {
+                    "android": "",
+                    "androidDeepLink": "",
+                    "ios": "",
+                    "iosDeepLink": "",
+                    "tickets": ""
+                },
+                "web": {
+                    "homepage": "",
+                    "tickets": ""
+                }
+            },
+            {
+                "teamId": "1610612751",
+                "tricode": "BKN",
+                "ttsName": "Brooklyn Nets",
+                "primaryColor": "#000000",
+                "secondaryColor": "#000000",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.brooklynnets.android&hl=en",
+                    "androidDeepLink": "yc-bkn-nba://",
+                    "ios": "https://itunes.apple.com/us/app/brooklyn-nets/id570867939",
+                    "iosDeepLink": "yc-bkn-nba://",
+                    "tickets": "http://m.ticketmaster.com/Brooklyn-Nets-tickets/artist/805983?extcmp=gw500735&wt.mc_id=NBA_LEAGUE_NETS_MOBILE_APP_LINK"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/nets",
+                    "tickets": "http://www.nba.com/nets/tickets"
+                }
+            },
+            {
+                "teamId": "1610612738",
+                "tricode": "BOS",
+                "ttsName": "Boston Celtics",
+                "primaryColor": "#00611b",
+                "secondaryColor": "#00611b",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.mobile.android.celtics&hl=en",
+                    "androidDeepLink": "com.bostonceltics.iphone",
+                    "ios": "https://itunes.apple.com/us/app/boston-celtics/id577818612",
+                    "iosDeepLink": "com.mobile.android.celtics",
+                    "tickets": "http://m.ticketmaster.com/Boston-Celtics-tickets/artist/805903?extcmp=gw500745&wt.mc_id=NBA_LEAGUE_BOS_MOBILE_APP_LINK"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/celtics",
+                    "tickets": "http://www.nba.com/celtics/tickets"
+                }
+            },
+            {
+                "teamId": "1610612766",
+                "tricode": "CHA",
+                "ttsName": "Charlotte Hornets",
+                "primaryColor": "#00848e",
+                "secondaryColor": "#00848e",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.yinzcam.nba.bobcats&hl=en",
+                    "androidDeepLink": "yc-cha-nba://",
+                    "ios": "https://itunes.apple.com/us/app/charlotte-hornets/id411553578",
+                    "iosDeepLink": "yc-cha-nba://",
+                    "tickets": "http://m.ticketmaster.com/artist/931493?extcmp=gw500744&wt.mc_id=NBA_LEAGUE_CHA_MOBILE_APP_LINK"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/hornets",
+                    "tickets": "http://www.nba.com/hornets/tickets"
+                }
+            },
+            {
+                "teamId": "1610612741",
+                "tricode": "CHI",
+                "ttsName": "Chicago Bulls",
+                "primaryColor": "#b00203",
+                "secondaryColor": "#b00203",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.yinzcam.nba.bulls&hl=en",
+                    "androidDeepLink": "yc-chi-nba://",
+                    "ios": "https://itunes.apple.com/us/app/chicago-bulls/id731191999",
+                    "iosDeepLink": "yc-chi-nba://",
+                    "tickets": "http://m.ticketmaster.com/Chicago-Bulls-tickets/artist/805914?extcmp=gw500726&wt.mc_id=NBA_LEAGUE_CHI_MOBILE_APP_LINK"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/bulls",
+                    "tickets": "http://www.nba.com/bulls/tickets"
+                }
+            },
+            {
+                "teamId": "1610612739",
+                "tricode": "CLE",
+                "ttsName": "Cleveland Cavaliers",
+                "primaryColor": "#860038",
+                "secondaryColor": "#860038",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.detroitlabs.cavaliers&hl=en",
+                    "androidDeepLink": "yc-cle-nba://",
+                    "ios": "https://itunes.apple.com/us/app/cleveland-cavaliers/id570803648",
+                    "iosDeepLink": "yc-cle-nba://",
+                    "tickets": "http://theqarena.com/events/?display=list&amp;cat=cavaliers"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/cavaliers",
+                    "tickets": "http://www.nba.com/cavaliers/tickets"
+                }
+            },
+            {
+                "teamId": "1610612742",
+                "tricode": "DAL",
+                "ttsName": "Dallas Mavericks",
+                "primaryColor": "#006bb6",
+                "secondaryColor": "#006bb6",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.mobileroadie.app_1202&hl=en",
+                    "androidDeepLink": "",
+                    "ios": "https://itunes.apple.com/us/app/official-dallas-mavericks/id413372557",
+                    "iosDeepLink": "",
+                    "tickets": "http://m.ticketmaster.com/Dallas-Mavericks-tickets/artist/805932?extcmp=gw500734&wt.mc_id=NBA_LEAGUE_DAL_MOBILE_APP_LINK"
+                },
+                "web": {
+                    "homepage": "http://www.mavs.com",
+                    "tickets": "http://www.mavs.com/tickets"
+                }
+            },
+            {
+                "teamId": "1610612743",
+                "tricode": "DEN",
+                "ttsName": "Denver Nuggets",
+                "primaryColor": "#0e2240",
+                "secondaryColor": "#0e2240",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.b3connect.dmf.nuggets&hl=en",
+                    "androidDeepLink": "yc-den-nba://",
+                    "ios": "https://itunes.apple.com/us/app/denver-nuggets/id654784306",
+                    "iosDeepLink": "yc-den-nba://",
+                    "tickets": "http://www.altitudetickets.com/tags/sports/basketball/?cfc=NUGGETS_MOBILE_GAMETIMEAPP"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/nuggets",
+                    "tickets": "http://www.nba.com/nuggets/tickets"
+                }
+            },
+            {
+                "teamId": "1610612765",
+                "tricode": "DET",
+                "ttsName": "Detroit Pistons",
+                "primaryColor": "#fa002c",
+                "secondaryColor": "#fa002c",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.b3connect.dmf.pistons&hl=en",
+                    "androidDeepLink": "https://u3735.app.goo.gl/CTXh",
+                    "ios": "https://itunes.apple.com/us/app/detroit-pistons-official-mobile/id570797670",
+                    "iosDeepLink": "https://u3735.app.goo.gl/CTXh",
+                    "tickets": "http://m.ticketmaster.com/Detroit-Pistons-tickets/artist/805937?extcmp=gw500738&wt.mc_id=NBA_LEAGUE_DET_MOBILE_APP_LINK"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/pistons",
+                    "tickets": "http://www.nba.com/pistons/tickets"
+                }
+            },
+            {
+                "teamId": "1610616833",
+                "tricode": "GNS",
+                "primaryColor": "#C8102E",
+                "secondaryColor": "#C8102E",
+                "app": {
+                    "android": "",
+                    "androidDeepLink": "",
+                    "ios": "",
+                    "iosDeepLink": "",
+                    "tickets": ""
+                },
+                "web": {
+                    "homepage": "",
+                    "tickets": ""
+                }
+            },
+            {
+                "teamId": "12304",
+                "tricode": "FCB",
+                "primaryColor": "#000000",
+                "secondaryColor": "#000000",
+                "app": {
+                    "android": "",
+                    "androidDeepLink": "",
+                    "ios": "",
+                    "iosDeepLink": "",
+                    "tickets": ""
+                },
+                "web": {
+                    "homepage": "",
+                    "tickets": ""
+                }
+            },
+            {
+                "teamId": "12325",
+                "tricode": "FLA",
+                "primaryColor": "#000000",
+                "secondaryColor": "#000000",
+                "app": {
+                    "android": "",
+                    "androidDeepLink": "",
+                    "ios": "",
+                    "iosDeepLink": "",
+                    "tickets": ""
+                },
+                "web": {
+                    "homepage": "",
+                    "tickets": ""
+                }
+            },
+            {
+                "teamId": "1610612744",
+                "tricode": "GSW",
+                "ttsName": "Golden State Warriors",
+                "primaryColor": "#003399",
+                "secondaryColor": "#003399",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.yinzcam.nba.warriors&hl=en",
+                    "androidDeepLink": "yc-gsw-nba://",
+                    "ios": "https://itunes.apple.com/us/app/golden-state-warriors/id516767086",
+                    "iosDeepLink": "yc-gsw-nba://",
+                    "tickets": "http://m.ticketmaster.com/artist/805946?extcmp=gw500731&wt.mc_id=NBA_LEAGUE_GSW_MOBILE_APP_LINK"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/warriors",
+                    "tickets": "http://www.nba.com/warriors/tickets"
+                }
+            },
+            {
+                "teamId": "15018",
+                "tricode": "GUA",
+                "primaryColor": "#000000",
+                "secondaryColor": "#000000",
+                "app": {
+                    "android": "",
+                    "androidDeepLink": "",
+                    "ios": "",
+                    "iosDeepLink": "",
+                    "tickets": ""
+                },
+                "web": {
+                    "homepage": "",
+                    "tickets": ""
+                }
+            },
+            {
+                "teamId": "1610612745",
+                "tricode": "HOU",
+                "ttsName": "Houston Rockets",
+                "primaryColor": "#cd212b",
+                "secondaryColor": "#cd212b",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.yinzcam.nba.rockets&hl=en",
+                    "androidDeepLink": "yc-hou-nba://",
+                    "ios": "https://itunes.apple.com/us/app/houston-rockets/id751632134",
+                    "iosDeepLink": "yc-hou-nba://",
+                    "tickets": "http://www.houstontoyotacenter.com/events/category/rockets?cid=gametimeapp_tickets_rockets"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/rockets",
+                    "tickets": "http://www.nba.com/rockets/tickets"
+                }
+            },
+            {
+                "teamId": "1610612754",
+                "tricode": "IND",
+                "ttsName": "Indiana Pacers",
+                "primaryColor": "#ffb517",
+                "secondaryColor": "#ffb517",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.yinzcam.nba.pacers&hl=en",
+                    "androidDeepLink": "yc-ind-nba://",
+                    "ios": "https://itunes.apple.com/us/app/indiana-pacers-official/id858169562",
+                    "iosDeepLink": "yc-ind-nba://",
+                    "tickets": "http://m.ticketmaster.com/Indiana-Pacers-tickets/artist/805952?extcmp=gw500739&wt.mc_id=NBA_LEAGUE_IND_MOBILE_APP_LINK"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/pacers",
+                    "tickets": "http://www.nba.com/pacers/tickets"
+                }
+            },
+            {
+                "teamId": "1610612746",
+                "tricode": "LAC",
+                "ttsName": "L.A. Clippers",
+                "primaryColor": "#ed174b",
+                "secondaryColor": "#ed174b",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.lucidappeal.laclippers&hl=en",
+                    "androidDeepLink": "yc-lac-nba://",
+                    "ios": "https://itunes.apple.com/us/app/la-clippers/id521606689",
+                    "iosDeepLink": "yc-lac-nba://",
+                    "tickets": "http://m.axs.com/artists/113909/los-angeles-clippers-tickets?cid=nbatickets_gametime_general"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/clippers",
+                    "tickets": "http://www.nba.com/clippers/tickets"
+                }
+            },
+            {
+                "teamId": "1610612747",
+                "tricode": "LAL",
+                "ttsName": "L.A. Lakers",
+                "primaryColor": "#fdba33",
+                "secondaryColor": "#fdba33",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.lucidappeal.appmold&hl=en",
+                    "androidDeepLink": "yc-lal-nba://",
+                    "ios": "https://itunes.apple.com/us/app/los-angeles-lakers-official/id578834522",
+                    "iosDeepLink": "yc-lal-nba://",
+                    "tickets": "http://m.ticketmaster.com/Los-Angeles-Lakers-tickets/artist/805962?extcmp=gw002391&wt.mc_id=NBA_LEAGUE_LAL_MOBILE_APP_LINK"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/lakers",
+                    "tickets": "http://www.nba.com/lakers/tickets"
+                }
+            },
+            {
+                "teamId": "93",
+                "tricode": "MAC",
+                "primaryColor": "#000000",
+                "secondaryColor": "#000000",
+                "app": {
+                    "android": "",
+                    "androidDeepLink": "",
+                    "ios": "",
+                    "iosDeepLink": "",
+                    "tickets": ""
+                },
+                "web": {
+                    "homepage": "",
+                    "tickets": ""
+                }
+            },
+            {
+                "teamId": "15016",
+                "tricode": "MEL",
+                "primaryColor": "#000000",
+                "secondaryColor": "#000000",
+                "app": {
+                    "android": "",
+                    "androidDeepLink": "",
+                    "ios": "",
+                    "iosDeepLink": "",
+                    "tickets": ""
+                },
+                "web": {
+                    "homepage": "",
+                    "tickets": ""
+                }
+            },
+            {
+                "teamId": "1610612763",
+                "tricode": "MEM",
+                "ttsName": "Memphis Grizzlies",
+                "primaryColor": "#5d76a9",
+                "secondaryColor": "#5d76a9",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.yinzcam.nba.grizzlies&hl=en",
+                    "androidDeepLink": "yc-mem-nba://",
+                    "ios": "https://itunes.apple.com/us/app/memphis-grizzlies/id787339433",
+                    "iosDeepLink": "yc-mem-nba://",
+                    "tickets": "http://www.ticketmaster.com/Memphis-Grizzlies-tickets/artist/806038?webview=1&brand=nba&camefromNBAGRIZZLIES_GTAPP"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/grizzlies",
+                    "tickets": "http://www.nba.com/grizzlies/tickets"
+                }
+            },
+            {
+                "teamId": "1610612748",
+                "tricode": "MIA",
+                "ttsName": "Miami Heat",
+                "primaryColor": "#98002e",
+                "secondaryColor": "#98002e",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.xcosoftware.miamiheat&hl=en",
+                    "androidDeepLink": "mh://",
+                    "ios": "https://itunes.apple.com/us/app/miami-heat-mobile/id497407923",
+                    "iosDeepLink": "mh://",
+                    "tickets": "http://m.ticketmaster.com/Miami-Heat-tickets/artist/805966?extcmp=gw500732&wt.mc_id=NBA_LEAGUE_MIA_MOBILE_APP_LINK"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/heat",
+                    "tickets": "http://www.nba.com/heat/tickets"
+                }
+            },
+            {
+                "teamId": "1610612749",
+                "ttsName": "Milwaukee Bucks",
+                "tricode": "MIL",
+                "primaryColor": "#00471b",
+                "secondaryColor": "#00471b",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.yinzcam.nba.bucks&hl=en",
+                    "androidDeepLink": "yc-mil-nba://",
+                    "ios": "https://itunes.apple.com/us/app/milwaukee-bucks/id731188767",
+                    "iosDeepLink": "yc-mil-nba://",
+                    "tickets": "http://m.ticketmaster.com/Milwaukee-Bucks-tickets/artist/805969?extcmp=gw500737&wt.mc_id=NBA_LEAGUE_MIL_MOBILE_APP_LINK"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/bucks",
+                    "tickets": "http://www.nba.com/bucks/tickets"
+                }
+            },
+            {
+                "teamId": "1610612750",
+                "tricode": "MIN",
+                "ttsName": "Minnesota Timberwolves",
+                "primaryColor": "#2b6291",
+                "secondaryColor": "#2b6291",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.yinzcam.nba.timberwolves&hl=en",
+                    "androidDeepLink": "yc-min-nba://",
+                    "ios": "https://itunes.apple.com/us/app/minnesota-timberwolves/id942701008?mt=8",
+                    "iosDeepLink": "yc-min-nba://",
+                    "tickets": "http://m.ticketmaster.com/Minnesota-Timberwolves-tickets/artist/805971?extcmp=gw500725&wt.mc_id=NBA_LEAGUE_MIN_MOBILE_APP_LINK"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/timberwolves",
+                    "tickets": "http://www.nba.com/timberwolves/tickets"
+                }
+            },
+            {
+                "teamId": "1610612740",
+                "tricode": "NOP",
+                "ttsName": "New Orleans Pelicans",
+                "primaryColor": "#0c2340",
+                "secondaryColor": "#0c2340",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.yinzcam.nba.pelicans&hl=en",
+                    "androidDeepLink": "yc-nop-nba://",
+                    "ios": "https://itunes.apple.com/us/app/new-orleans-pelicans/id720553754",
+                    "iosDeepLink": "yc-nop-nba://",
+                    "tickets": "http://m.ticketmaster.com/New-Orleans-Pelicans-tickets/artist/805910?extcmp=gw500741&wt.mc_id=NBA_LEAGUE_NO_MOBILE_APP_LINK"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/pelicans",
+                    "tickets": "http://www.nba.com/pelicans/tickets"
+                }
+            },
+            {
+                "teamId": "15020",
+                "tricode": "NZB",
+                "primaryColor": "#000000",
+                "secondaryColor": "#000000",
+                "app": {
+                    "android": "",
+                    "androidDeepLink": "",
+                    "ios": "",
+                    "iosDeepLink": "",
+                    "tickets": ""
+                },
+                "web": {
+                    "homepage": "",
+                    "tickets": ""
+                }
+            },
+            {
+                "teamId": "1610612752",
+                "tricode": "NYK",
+                "ttsName": "New York Knicks",
+                "primaryColor": "#f58426",
+                "secondaryColor": "#f58426",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.msgi.knicks&hl=en",
+                    "androidDeepLink": "yc-nyk-nba://",
+                    "ios": "https://itunes.apple.com/us/app/new-york-knicks-official-app/id498010853",
+                    "iosDeepLink": "yc-nyk-nba://",
+                    "tickets": "http://m.ticketmaster.com/New-York-Knicks-tickets/artist/805988?extcmp=gw002390&wt.mc_id=NBA_LEAGUE_NY_MOBILE_APP_LINK"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/knicks",
+                    "tickets": "http://www.nba.com/knicks/tickets"
+                }
+            },
+            {
+                "teamId": "1610612760",
+                "tricode": "OKC",
+                "ttsName": "Oklahoma City Thunder",
+                "primaryColor": "#002d62",
+                "secondaryColor": "#002d62",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.yinzcam.nba.thunder&hl=en",
+                    "androidDeepLink": "yc-okc-nba://",
+                    "ios": "https://itunes.apple.com/us/app/oklahoma-city-thunder/id731118829",
+                    "iosDeepLink": "yc-okc-nba://",
+                    "tickets": "http://m.ticketmaster.com/Oklahoma-City-OKC-Thunder-tickets/artist/1250512?extcmp=gw500728&wt.mc_id=NBA_LEAGUE_OKC_MOBILE_APP_LINK"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/thunder",
+                    "tickets": "http://www.nba.com/thunder/tickets"
+                }
+            },
+            {
+                "teamId": "1610612753",
+                "tricode": "ORL",
+                "ttsName": "Orlando Magic",
+                "primaryColor": "#0077c0",
+                "secondaryColor": "#0077c0",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.yinzcam.nba.magic&hl=en",
+                    "androidDeepLink": "orlandomagic://",
+                    "ios": "https://itunes.apple.com/us/app/orlando-magic-mobile/id731742786",
+                    "iosDeepLink": "orlandomagic://",
+                    "tickets": "http://m.ticketmaster.com/Orlando-Magic-tickets/artist/805995?extcmp=gw500733&wt.mc_id=NBA_LEAGUE_ORL_MOBILE_APP_LINK"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/magic",
+                    "tickets": "http://www.nba.com/magic/tickets"
+                }
+            },
+            {
+                "teamId": "104",
+                "tricode": "PER",
+                "primaryColor": "#000000",
+                "secondaryColor": "#000000",
+                "app": {
+                    "android": "",
+                    "androidDeepLink": "",
+                    "ios": "",
+                    "iosDeepLink": "",
+                    "tickets": ""
+                },
+                "web": {
+                    "homepage": "",
+                    "tickets": ""
+                }
+            },
+            {
+                "teamId": "1610612755",
+                "tricode": "PHI",
+                "ttsName": "Philadelphia 76ers",
+                "primaryColor": "#ef0022",
+                "secondaryColor": "#ef0022",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.yinzcam.nba.sixers&hl=en",
+                    "androidDeepLink": "yc-phi-nba://",
+                    "ios": "https://itunes.apple.com/us/app/philadelphia-76ers/id731147513",
+                    "iosDeepLink": "yc-phi-nba://",
+                    "tickets": "http://ev10.evenue.net/cgi-bin/ncommerce3/SEGetEventList?groupCode=76SINGLE&linkID=global-sixers&RSRC=NBA_Gametime_Mobile_App&RDAT=701U0000000Uy18"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/sixers",
+                    "tickets": "http://www.nba.com/sixers/tickets"
+                }
+            },
+            {
+                "teamId": "1610612756",
+                "tricode": "PHX",
+                "ttsName": "Phoenix Suns",
+                "primaryColor": "#e76221",
+                "secondaryColor": "#e76221",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.yinzcam.nba.suns&hl=en",
+                    "androidDeepLink": "yc-phx-nba://",
+                    "ios": "https://itunes.apple.com/us/app/phoenix-suns-mobile/id522164105",
+                    "iosDeepLink": "yc-phx-nba://",
+                    "tickets": "http://m.ticketmaster.com/Phoenix-Suns-tickets/artist/806004?extcmp=gw500740&wt.mc_id=NBA_LEAGUE_PHX_MOBILE_APP_LINK"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/suns",
+                    "tickets": "http://www.nba.com/suns/tickets"
+                }
+            },
+            {
+                "teamId": "1610612757",
+                "tricode": "POR",
+                "ttsName": "Portland Trail Blazers",
+                "primaryColor": "#cc0000",
+                "secondaryColor": "#cc0000",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.yinzcam.nba.trailblazers&hl=en",
+                    "androidDeepLink": "yc-por-nba://",
+                    "ios": "https://itunes.apple.com/us/app/portland-trail-blazers/id573576267",
+                    "iosDeepLink": "yc-por-nba://",
+                    "tickets": "http://m.ticketmaster.com/Portland-Trail-Blazers-tickets/artist/806009?extcmp=gw504110&wt.mc_id=NBA_LEAGUE_POR_MOBILE_APP_LINK"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/blazers",
+                    "tickets": "http://www.nba.com/blazers/tickets"
+                }
+            },
+            {
+                "teamId": "12315",
+                "tricode": "RMD",
+                "primaryColor": "#000000",
+                "secondaryColor": "#000000",
+                "app": {
+                    "android": "",
+                    "androidDeepLink": "",
+                    "ios": "",
+                    "iosDeepLink": "",
+                    "tickets": ""
+                },
+                "web": {
+                    "homepage": "",
+                    "tickets": ""
+                }
+            },
+            {
+                "teamId": "1610612758",
+                "tricode": "SAC",
+                "ttsName": "Sacramento Kings",
+                "primaryColor": "#51388a",
+                "secondaryColor": "#51388a",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.kings&hl=en",
+                    "androidDeepLink": "kingsapp://",
+                    "ios": "https://itunes.apple.com/us/app/sacramento-kings/id553358391",
+                    "iosDeepLink": "kingsapp://",
+                    "tickets": "http://m.ticketmaster.com/Sacramento-Kings-tickets/artist/806010?extcmp=gw500727&amp;wt.mc_id=NBA_LEAGUE_SAC_MOBILE_APP_LINK"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/kings",
+                    "tickets": "http://www.nba.com/kings/tickets"
+                }
+            },
+            {
+                "teamId": "1610612759",
+                "tricode": "SAS",
+                "ttsName": "San Antonio Spurs",
+                "primaryColor": "#959191",
+                "secondaryColor": "#959191",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.yinzcam.nba.spurs&hl=en",
+                    "androidDeepLink": "yc-sas-nba://",
+                    "ios": "https://itunes.apple.com/us/app/san-antonio-spurs/id775446770",
+                    "iosDeepLink": "yc-sas-nba://",
+                    "tickets": "http://m.ticketmaster.com/San-Antonio-Spurs-tickets/artist/806012?extcmp=gw500729&wt.mc_id=NBA_LEAGUE_SAN_MOBILE_APP_LINK"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/spurs",
+                    "tickets": "http://www.nba.com/spurs/tickets"
+                }
+            },
+            {
+                "teamId": "12329",
+                "tricode": "SDS",
+                "primaryColor": "#000000",
+                "secondaryColor": "#000000",
+                "app": {
+                    "android": "",
+                    "androidDeepLink": "",
+                    "ios": "",
+                    "iosDeepLink": "",
+                    "tickets": ""
+                },
+                "web": {
+                    "homepage": "",
+                    "tickets": ""
+                }
+            },
+            {
+                "teamId": "12330",
+                "tricode": "SLA",
+                "primaryColor": "#000000",
+                "secondaryColor": "#000000",
+                "app": {
+                    "android": "",
+                    "androidDeepLink": "",
+                    "ios": "",
+                    "iosDeepLink": "",
+                    "tickets": ""
+                },
+                "web": {
+                    "homepage": "",
+                    "tickets": ""
+                }
+            },
+            {
+                "teamId": "15015",
+                "tricode": "SYD",
+                "primaryColor": "#000000",
+                "secondaryColor": "#000000",
+                "app": {
+                    "android": "",
+                    "androidDeepLink": "",
+                    "ios": "",
+                    "iosDeepLink": "",
+                    "tickets": ""
+                },
+                "web": {
+                    "homepage": "",
+                    "tickets": ""
+                }
+            },
+            {
+                "teamId": "1610612761",
+                "tricode": "TOR",
+                "ttsName": "Toronto Raptors",
+                "primaryColor": "#bd1b21",
+                "secondaryColor": "#bd1b21",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.oneup.raptors&hl=en",
+                    "androidDeepLink": "https://play.google.com/store/apps/details?id=com.oneup.raptors",
+                    "ios": "https://itunes.apple.com/us/app/raptors-mobile/id563960448",
+                    "iosDeepLink": "http://apple.co/1RrlUFY",
+                    "tickets": "http://www.ticketmaster.ca/Toronto-Raptors-tickets/artist/806034?webview=1&brand=nba&camefromNBARAPTORS_GTAPP"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/raptors",
+                    "tickets": "http://www.nba.com/raptors/tickets"
+                }
+            },
+            {
+                "teamId": "1610616843",
+                "tricode": "USA",
+                "primaryColor": "#FC4C02",
+                "secondaryColor": "#FC4C02",
+                "app": {
+                    "android": "",
+                    "androidDeepLink": "",
+                    "ios": "",
+                    "iosDeepLink": "",
+                    "tickets": ""
+                },
+                "web": {
+                    "homepage": "",
+                    "tickets": ""
+                }
+            },
+            {
+                "teamId": "1610612762",
+                "tricode": "UTA",
+                "ttsName": "Utah Jazz",
+                "primaryColor": "#f9a11e",
+                "secondaryColor": "#f9a11e",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.yinzcam.nba.jazz&hl=en",
+                    "androidDeepLink": "yc-uta-nba://",
+                    "ios": "https://itunes.apple.com/us/app/utah-jazz-official-app-jazz/id716118894",
+                    "iosDeepLink": "yc-uta-nba://",
+                    "tickets": "http://smithstix.com/sports/all-sports/basketball/events"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/jazz",
+                    "tickets": "http://www.nba.com/jazz/tickets"
+                }
+            },
+            {
+                "teamId": "1610612764",
+                "tricode": "WAS",
+                "ttsName": "Washington Wizards",
+                "primaryColor": "#cf142b",
+                "secondaryColor": "#cf142b",
+                "app": {
+                    "android": "https://play.google.com/store/apps/details?id=com.yinzcam.nba.wizards&hl=en",
+                    "androidDeepLink": "yc-was-nba://",
+                    "ios": "https://itunes.apple.com/us/app/washington-wizards/id518100653",
+                    "iosDeepLink": "yc-was-nba://",
+                    "tickets": "http://m.ticketmaster.com/Washington-Wizards-tickets/artist/806042?extcmp=gw500730&wt.mc_id=NBA_LEAGUE_WAS_MOBILE_APP_LINK"
+                },
+                "web": {
+                    "homepage": "http://www.nba.com/wizards",
+                    "tickets": "http://www.nba.com/wizards/tickets"
+                }
+            },
+            {
+                "teamId": "1610616844",
+                "tricode": "WLD",
+                "primaryColor": "#330072",
+                "secondaryColor": "#330072",
+                "app": {
+                    "android": "",
+                    "androidDeepLink": "",
+                    "ios": "",
+                    "iosDeepLink": "",
+                    "tickets": ""
+                },
+                "web": {
+                    "homepage": "",
+                    "tickets": ""
+                }
+            },
+            {
+                "teamId": "000000",
+                "tricode": "LKR",
+                "primaryColor": "#ffffff"
+            },
+            {
+                "teamId": "000000",
+                "tricode": "CLP",
+                "primaryColor": "#ffffff"
+            },
+            {
+                "teamId": "1610616834",
+                "tricode": "LBN",
+                "primaryColor": "#1D428A",
+                "secondaryColor": "#1D428A",
+                "app": {
+                    "android": "",
+                    "androidDeepLink": "",
+                    "ios": "",
+                    "iosDeepLink": "",
+                    "tickets": ""
+                },
+                "web": {
+                    "homepage": "",
+                    "tickets": ""
+                }
+            },
+            {
+                "teamId": "1699999999",
+                "tricode": "EST",
+                "primaryColor": "#B2BBC1",
+                "secondaryColor": "#B2BBC1",
+                "app": {
+                    "android": "",
+                    "androidDeepLink": "",
+                    "ios": "",
+                    "iosDeepLink": "",
+                    "tickets": ""
+                },
+                "web": {
+                    "homepage": "",
+                    "tickets": ""
+                }
+            },
+            {
+                "teamId": "1699999998",
+                "tricode": "WST",
+                "primaryColor": "#B2BBC1",
+                "secondaryColor": "#B2BBC1",
+                "app": {
+                    "android": "",
+                    "androidDeepLink": "",
+                    "ios": "",
+                    "iosDeepLink": "",
+                    "tickets": ""
+                },
+                "web": {
+                    "homepage": "",
+                    "tickets": ""
+                }
+            }
+        ]
+    }
+}
