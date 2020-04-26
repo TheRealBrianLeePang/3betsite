@@ -131,16 +131,14 @@ for index,i in enumerate(teamNames):
         
         if jindex % 2 == 0:
             result += "<div class='tooltip'>" + str(j) + "<span class='tooltiptext'>" 
-            for p in playernames:
-                if str(p) != "None":
-                    result += str(p) + "<br>"
-            result += "</span></div></td>"
+            for p in playernames[:-1]:
+                result += str(p) + "<br>"
+            result += playernames[-1] + "</span></div></td>"
         else:
             result += "<div class='tooltip'>" + str(j) + "<span class='tooltiptext'>" 
-            for p in playernames:
-                if str(p) != "None":
-                    result += str(p) + "<br>"
-            result += "</span></div></td>"
+            for p in playernames[:-1]:
+                result += str(p) + "<br>"
+            result += playernames[-1] + "</span></div></td>"
             result += "<td>" + arenas[index]  + "<td></td> "
 
     result += "</tr>"
