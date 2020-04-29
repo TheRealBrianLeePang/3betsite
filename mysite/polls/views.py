@@ -19,9 +19,7 @@ def addZero(num):
 today = date.today()
 year = str(today.year)
 month = addZero(int(today.month)-3)
-tempDay = today.day
-if tempDay > 29:
-    tempDay = 29
+tempDay = today.day+1
 day = addZero(tempDay)
 scheduleYear = ''
 games = []
