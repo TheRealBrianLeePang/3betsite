@@ -117,10 +117,33 @@ def getContentForDate(param):
     result += ".tooltip .tooltiptext {visibility: hidden; width: 200px; background-color: black; color: white; text-align: center; border-radius: 6px; padding: 5px 0; top: 100%; left: 50%; margin-left: -100px; position: absolute; z-index: 1;}"
     result += ".tooltip:hover .tooltiptext {visibility: visible;}"
     result += ".center {margin: 0; position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}"
-    result += "body{color: white; font-weight: bold; background-image: url('https://cdn.nba.net/assets/video/logos/nba-placeholder.jpg'); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}</style>"
+    result += "body{color: white; font-weight: bold; background-image: url('https://cdn.nba.net/assets/video/logos/nba-placeholder.jpg'); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}"
+    result += "table{white-space: nowrap;}</style>"
     result += "</head><div class='center'><body><h1 align='center'>NBA Games Happening on " + month + "/" + day + "/" + year + ":</h1>"
     result += "<h3 style = 'text-align:center'><i>(If COVID-19 didn't exist!)</i></h3>"
-    result += "<table align='center' class='pure-table pure-table-bordered'><thead><tr><th>Away Team</th><th>Home Team</th><th>Location</th><th>Winner/Spread</th></thead>"
+    
+    result+='''
+        <form action="/polls/callback">
+            <label for="date">Select Game Day:</label>
+            <input type="date" id="date" name="date">
+            <input type="submit">
+        </form>
+        <style>
+        form {
+            text-align: center;
+        }
+        input[type="date"], textarea {
+            background-color : #d1d1d1;
+            color : black; 
+        }
+        input[type="submit"], textarea {
+            background-color : #d1d1d1; 
+            color : black;
+        }
+        </style>
+        '''
+
+    result += "<br><table align='center' class='pure-table pure-table-bordered'><thead><tr><th>Away Team</th><th>Home Team</th><th>Location</th><th>Winner/Spread</th></thead>"
 
     with open('polls/playerDictionary.json') as json_file:
         playerDict = json.load(json_file)
@@ -151,24 +174,6 @@ def getContentForDate(param):
         result += "</tr>"
     result+= "</table><br><a href = 'https://stats.nba.com/scores/03/11/2020'><img src='http://loodibee.com/wp-content/uploads/nba-logo-transparent.png' alt='NBA logo' height='150'></a>"
     result+= "<p style = 'text-align:center; font-size:12px'>Project 3bet, Case Western Reserve Univeristy 2020 Senior Project <br> David Greenberg, Brian Pang, Lucas Invernizzi, Kevin Szmyd, David Kerrigan</p></body></html>"
-    result+='''
-    <form action="/polls/callback">
-        <label for="date">Date:</label>
-        <input type="date" id="date" name="date">
-        <input type="submit">
-    </form>
-    <style>
-    form {
-        text-align: center;
-    }
-    input[type="date"], textarea {
-        background-color : #d1d1d1; 
-    }
-    input[type="submit"], textarea {
-        background-color : #d1d1d1; 
-    }
-    </style>
-    '''
     return result
 
 def getDateError():
@@ -186,25 +191,27 @@ def getDateError():
     result += ".tooltip:hover .tooltiptext {visibility: visible;}"
     result += ".center {margin: 0; position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}"
     result += "body{color: white; font-weight: bold; background-image: url('https://cdn.nba.net/assets/video/logos/nba-placeholder.jpg'); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}</style>"
-    result += "</head><div class='center'><body><h1 align='center'>Uh oh you entered a date not covered; try again</h1>"
+    result += "</head><div class='center'><body><h1 align='center'>The date selected is not in the 3Bet Project Model. <br> Please enter another date:</h1>"
     result+='''
-    <form action="/polls/callback">
-        <label for="date">Date:</label>
-        <input type="date" id="date" name="date">
-        <input type="submit">
-    </form>
-    <style>
-    form {
-        text-align: center;
-    }
-    input[type="date"], textarea {
-        background-color : #d1d1d1; 
-    }
-    input[type="submit"], textarea {
-        background-color : #d1d1d1; 
-    }
-    </style>
-    '''
+        <form action="/polls/callback">
+            <label for="date">Select Game Day:</label>
+            <input type="date" id="date" name="date">
+            <input type="submit">
+        </form>
+        <style>
+        form {
+            text-align: center;
+        }
+        input[type="date"], textarea {
+            background-color : #d1d1d1;
+            color : black; 
+        }
+        input[type="submit"], textarea {
+            background-color : #d1d1d1; 
+            color : black;
+        }
+        </style>
+        '''
     return result
 
 def callback(request):
