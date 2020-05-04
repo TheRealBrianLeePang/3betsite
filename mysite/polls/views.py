@@ -21,6 +21,7 @@ def getContentForDate(param):
     year = str(today.year)
     day = addZero(today.day)
     month = addZero(today.month)
+    strDate = year+"-"+month+"-"+day
     scheduleYear = ''
     games = []
     arenas = []
@@ -57,7 +58,10 @@ def getContentForDate(param):
     teamNames = deepcopy(games)
     for index,i in enumerate(games):
         for jindex,j in enumerate(i):
-            name = teamDict[j]
+            if j in teamDict:
+                name = teamDict[j]
+            else:
+                name = j
             teamNames[index][jindex] = name
     savedDict = {}
     def getPlayers(teamId):
@@ -126,23 +130,23 @@ def getContentForDate(param):
     result+='''
         <form action="/polls/callback">
             <label for="date">Select Game Day:</label>
-            <input type="date" id="date" name="date" value = "2019-10-22">
+            <input type="date" id="date" name="date" value = "{}">
             <input type="submit">
         </form>
         <style>
-        form {
+        form {{
             text-align: center;
-        }
-        input[type="date"], textarea {
+        }}
+        input[type="date"], textarea {{
             background-color : #d1d1d1;
             color : black; 
-        }
-        input[type="submit"], textarea {
+        }}
+        input[type="submit"], textarea {{
             background-color : #d1d1d1; 
             color : black;
-        }
+        }}
         </style>
-        '''
+        '''.format(strDate)
 
     result += "<br><table align='center' class='pure-table pure-table-bordered'><thead><tr><th>Away Team</th><th>Home Team</th><th>Location</th><th>Winner/Spread</th></thead>"
 
@@ -152,8 +156,10 @@ def getContentForDate(param):
     for index,i in enumerate(teamNames):
         result += "<tr>"
         for jindex,j in enumerate(i):
-            
-            playernames = playerDict[games[index][jindex]]
+            if games[index][jindex] in playerDict:
+                playernames = playerDict[games[index][jindex]]
+            else:
+                playernames = ""
             playernames = playernames.split(",")
             
             result += "<td>"
