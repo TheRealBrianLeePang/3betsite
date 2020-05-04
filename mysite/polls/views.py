@@ -112,7 +112,8 @@ def getContentForDate(param):
     result += "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
     result += "<title>NBA Games</title>"
     result += "<link rel='stylesheet' href='https://unpkg.com/purecss@1.0.1/build/pure-min.css'>"
-    result += "<style>img{display: block; margin-left: auto; margin-right: auto;}"
+    result += "<style>"
+    result += "img{display: block; margin-left: auto; margin-right: auto;}"
     result += ".tooltip {position: relative; display: inline-block; border-bottom: 1px dotted black;}"
     result += ".tooltip .tooltiptext {visibility: hidden; width: 200px; background-color: black; color: white; text-align: center; border-radius: 6px; padding: 5px 0; top: 100%; left: 50%; margin-left: -100px; position: absolute; z-index: 1;}"
     result += ".tooltip:hover .tooltiptext {visibility: visible;}"
@@ -125,7 +126,7 @@ def getContentForDate(param):
     result+='''
         <form action="/polls/callback">
             <label for="date">Select Game Day:</label>
-            <input type="date" id="date" name="date">
+            <input type="date" id="date" name="date" value = "2019-10-22">
             <input type="submit">
         </form>
         <style>
@@ -191,11 +192,13 @@ def getDateError():
     result += ".tooltip:hover .tooltiptext {visibility: visible;}"
     result += ".center {margin: 0; position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}"
     result += "body{color: white; font-weight: bold; background-image: url('https://cdn.nba.net/assets/video/logos/nba-placeholder.jpg'); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}</style>"
-    result += "</head><div class='center'><body><h1 align='center'>The date selected is not in the 3Bet Project Model. <br> Please enter another date:</h1>"
+    result += "</head><div class='center'>"
+    result += "<img src='https://www.nydailynews.com/resizer/DKedK97eZSd4d2WbitR8EHY31ig=/800x449/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/6QUWZT3XHKLK3HJZADSBFWQQPE.gif' alt='DENIED!'>"
+    result += "<h1 align='center'>DENIED!</h1><h2 align='center'>The date selected is not in the 3Bet Project Model. <br> Please enter another date:</h2>"
     result+='''
         <form action="/polls/callback">
             <label for="date">Select Game Day:</label>
-            <input type="date" id="date" name="date">
+            <input type="date" id="date" name="date" value = "2019-10-22" min="2019-10-22" max="2020-03-11">
             <input type="submit">
         </form>
         <style>
